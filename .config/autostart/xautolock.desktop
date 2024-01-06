@@ -1,0 +1,5 @@
+[Desktop Entry]
+Name=Auto Lock
+Exec=xautolock -time 30 -locker "i3lock -i ~/Pictures/Wallpapers/gnu-linux.png -t && systemctl suspend"
+Type=Application
+X-GNOME-Autostart-enabled=true
