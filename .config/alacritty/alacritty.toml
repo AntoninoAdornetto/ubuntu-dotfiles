@@ -1,0 +1,19 @@
+[font]
+size = 11.0
+
+[font.normal]
+family = "Jetbrains mono"
+
+[[keyboard.bindings]]
+action = "Paste"
+key = "V"
+mods = "Control"
+
+[shell]
+args = ["-i"]
+program = "/usr/bin/zsh"
+
+[window]
+opacity = 0.95
+padding.x = 5
+padding.y = 5
