@@ -1,0 +1,69 @@
+{
+  "editor.formatOnSave": true,
+  "editor.formatOnSaveMode": "file",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.colorTheme": "Nord Deep",
+  "editor.fontFamily": "'JetBrains Mono Bold', 'monospace', monospace",
+  "editor.fontLigatures": false,
+  "extensions.experimental.affinity": {
+    "vscodevim.vim": 1
+  },
+  "vim.leader": "<space>",
+  "vim.searchHighlightColor": "yellow",
+  "vim.normalModeKeyBindings": [
+    {
+      "before": ["c-o"],
+      "commands": ["workbench.action.navigateBack"]
+    },
+    {
+      "before": ["c-i"],
+      "commands": ["workbench.action.navigateForward"]
+    },
+    {
+      "before": ["r"],
+      "after": ["C-r"]
+    },
+    {
+      "before": ["<leader>", "f", "f"],
+      "after": [],
+      "commands": [
+        {
+          "command": "workbench.action.quickOpen",
+          "args": []
+        }
+      ]
+    },
+    {
+      "before": ["<leader>", "p", "v"],
+      "after": [],
+      "commands": [
+        {
+          "command": "workbench.action.toggleSidebarVisibility",
+          "args": []
+        }
+      ]
+    },
+    {
+      "before": ["<leader>", "f", "g"],
+      "after": [],
+      "commands": [
+        {
+          "command": "workbench.action.findInFiles",
+          "args": []
+        }
+      ]
+    },
+    {
+      "before": ["<leader>", "G"],
+      "after": [],
+      "commands": [
+        {
+          "command": "workbench.scm.active",
+          "args": []
+        }
+      ]
+    }
+  ],
+  "editor.lineNumbers": "relative"
+}
