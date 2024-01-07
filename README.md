@@ -2,6 +2,10 @@
 
 This repository contains my personal configuration files (dotfiles) for various applications and tools I use with Ubuntu.
 
+# Preview
+
+![preview](./Pictures/dotfiles.png)
+
 # Features
 
 ### Alacritty
@@ -26,7 +30,11 @@ Easy to use tool for creating status bars
 
 ### Zsh
 
+Extended version of the Bourne Shell (sh), with many improvements and features
+
 ### Tmux
+
+Terminal multiplexer for Unix-like operating systems.
 
 # Setup Guide
 
