@@ -3,7 +3,7 @@
   "editor.formatOnSaveMode": "file",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "workbench.iconTheme": "vscode-icons",
-  "workbench.colorTheme": "Nord Deep",
+  "workbench.colorTheme": "Carbonfox",
   "editor.fontFamily": "'JetBrains Mono Bold', 'monospace', monospace",
   "editor.fontLigatures": false,
   "extensions.experimental.affinity": {
@@ -65,5 +65,6 @@
       ]
     }
   ],
-  "editor.lineNumbers": "relative"
+  "editor.lineNumbers": "relative",
+  "terminal.integrated.sendKeybindingsToShell": true
 }
