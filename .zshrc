@@ -124,12 +124,7 @@ alias .config="vim ~/.config/"
 # Projects
 alias apps="cd ~/Hack/2024/applications/"
 
-# cmds/scripts
-
-# Should be in i3 config but wasn't working properly. 
-xrandr --output DP-1 --mode 1920x1080
-xrandr --output HDMI-1 --mode 1920x1080
-
+alias sc="source ~/.zshrc"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
