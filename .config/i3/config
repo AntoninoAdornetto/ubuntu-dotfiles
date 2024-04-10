@@ -57,19 +57,16 @@ bindsym $mod+B exec brave
 bindsym $mod+c kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec --no-startup-id dmenu_run
+# bindsym $mod+d exec --no-startup-id dmenu_run
 # A more modern dmenu replacement is rofi:
-# bindcode $mod+40 exec "rofi -modi drun,run -show drun"
+# bindcode $mod+d exec "rofi -modi drun,run -show drun"
+bindsym $mod+d exec rofi -show drun -display-drun -show-icons "Applications"
 # There also is i3-dmenu-desktop which only displays applications shipping a
 # .desktop file. It is a wrapper around dmenu, so you need that installed.
 # bindcode $mod+40 exec --no-startup-id i3-dmenu-desktop
 
-# monitor positioning
-exec --no-startup-id xrandr --output DP-1 --auto --primary --output HDMI-1 --auto --right-of DP-1
-
-# monitor resolutions. These commands are in .zshrc
-# exec --no-startup-id xrandr --output HDMI-1 --mode 2560x1440
-# exec --no-startup-id xrandr --output DP-1 --mode 2560x1440
+# monitor position and resolution
+exec_always xrandr --output DP-1 --auto --primary --mode 1920x1080 --output HDMI-1 --auto --right-of DP-1 --mode 1920x1080
 
 # change focus
 bindsym $mod+h focus left
@@ -221,6 +218,6 @@ exec_always nitrogen --restore
 exec_always --no-startup-id picom &
 
 # manually lock
-bindsym Control+Mod1+l exec "i3lock -c 000000"
+bindsym $mod+Shift+x exec /home/byteblitz/Scripts/lock-screen.sh
 
 exec_always ~/.config/polybar/launch.sh &
