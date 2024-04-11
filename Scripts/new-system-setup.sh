@@ -11,3 +11,4 @@ nitrogen
 zsh
 ripgrep
 flameshot
+rofi
