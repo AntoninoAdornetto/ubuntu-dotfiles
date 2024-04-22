@@ -2,4 +2,4 @@
 
 xrandr --output HDMI-1 --off
 
-i3lock -i /home/byteblitz/Pictures/ubuntu_3.png
+i3lock -i /home/{$USER}/Pictures/ubuntu_3.png
