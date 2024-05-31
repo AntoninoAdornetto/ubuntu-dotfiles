@@ -1,9 +1,0 @@
-[submodule ".goenv"]
-	path = .goenv
-	url = git@github.com:go-nv/goenv.git
-[submodule ".nvm"]
-	path = .nvm
-	url = git@github.com:nvm-sh/nvm.git
-[submodule ".config/nvim"]
-	path = .config/nvim
-	url = git@github.com:AntoninoAdornetto/vim-diesel-kickstart.git
