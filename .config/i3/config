@@ -218,6 +218,6 @@ exec_always nitrogen --restore
 exec_always --no-startup-id picom &
 
 # manually lock
-bindsym $mod+Shift+x exec /home/byteblitz/Scripts/lock-screen.sh
+bindsym $mod+Shift+x exec $HOME/Scripts/lock-screen.sh
 
 exec_always ~/.config/polybar/launch.sh &
