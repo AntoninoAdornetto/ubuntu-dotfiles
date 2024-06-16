@@ -61,15 +61,9 @@ alias nvimconfig="vim ~/.config/nvim/"
 # TMUX
 alias tns="tmux new -s $@"
 
-# NODE
-alias shadcli="node ~/Development/open-source/shadcn-ui/packages/cli/dist/index.js"
-
 ############################
 ############################
 ############################
-
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 ############################
 #  LANG VERSION MANAGERS   #
@@ -86,9 +80,6 @@ export PATH="$GOENV_ROOT/bin:$PATH"
 eval "$(goenv init -)"
 export PATH="$GOROOT/bin:$PATH"
 export PATH="$PATH:$GOPATH/bin"
-
-# Flutter
-export PATH="$HOME/.flutter/flutter/bin:$PATH"
 
 ############################
 ############################
