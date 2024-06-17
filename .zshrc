@@ -23,6 +23,8 @@ zinit light Aloxaf/fzf-tab
 
 autoload -U compinit && compinit
 
+eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/zen.toml)"
+
 bindkey -e
 bindkey '^p' history-search-backward
 bindkey '^n' history-search-forward
