@@ -67,7 +67,9 @@ alias nvimconfig="vim ~/.config/nvim/"
 # TMUX
 alias tns="tmux new -s $@"
 
+# System
 alias ls="ls --color"
+alias ..="cd .."
 
 eval "$(fzf --zsh)"
 
