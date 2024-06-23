@@ -57,6 +57,7 @@ zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
 # GIT
 alias gs="git status"
 alias gpo="git pull origin $@"
+alias gpush="git push origin $@"
 alias gw="git switch $@"
 alias gfo="git fetch origin $@"
 
