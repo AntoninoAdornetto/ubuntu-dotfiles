@@ -4,12 +4,6 @@ size = 13.0
 [font.normal]
 family = "JetBrains Mono NerdFont"
 
-[[keyboard.bindings]]
-action = "Paste"
-key = "V"
-mods = "Control"
-
-
 [shell]
 args = ["-i"]
 program = "/usr/bin/zsh"
