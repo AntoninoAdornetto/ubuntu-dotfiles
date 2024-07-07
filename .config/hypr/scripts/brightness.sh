@@ -1,16 +1,9 @@
 #!/bin/env bash
 
-notification_timeout=1000
 step=10  # INCREASE/DECREASE BY THIS VALUE
 
-# Get brightness
 get_backlight() {
 	brightnessctl -m | cut -d, -f4 | sed 's/%//'
-}
-
-# Notify
-notify_user() {
-	notify-send -e -h string:x-canonical-private-synchronous:brightness_notif -h int:value:$current -u low -i "Brightness : $current%"
 }
 
 # Change brightness
@@ -34,10 +27,8 @@ change_backlight() {
 
 	brightnessctl set "${new_brightness}%"
 	current=$new_brightness
-	notify_user
 }
 
-# Execute accordingly
 case "$1" in
 	"--get")
 		get_backlight
