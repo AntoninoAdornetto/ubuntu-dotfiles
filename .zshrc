@@ -72,6 +72,9 @@ alias tns="tmux new -s $@"
 alias ls="ls --color"
 alias ..="cd .."
 
+# RSS Feed Reader
+alias nb="newsboat"
+
 eval "$(fzf --zsh)"
 
 ############################
