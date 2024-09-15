@@ -72,9 +72,6 @@ alias tns="tmux new -s $@"
 alias ls="ls --color"
 alias ..="cd .."
 
-# Java
-alias mci="mvn clean install"
-
 eval "$(fzf --zsh)"
 
 ############################
