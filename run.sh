@@ -2,7 +2,7 @@
 
 set -e
 
-WD="$HOME/.dotfiles/.dot-scripts"
+WD="$HOME/.dotfiles/scripts/"
 
 # Backup existing dots
 source "$WD/backup.sh"
@@ -40,4 +40,7 @@ source "$WD/goenv.sh"
 rustup default stable
 
 # Create symlinks with stow
+# NOTE: This is the bread and butter of the script. 
+# After all processes are complete, stow will create symlinks in the home 
+# directory for all the configuration files.
 stow .
