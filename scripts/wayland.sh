@@ -2,4 +2,4 @@
 
 PKGS="grim slurp swappy swww waybar wl-clipboard"
 
-sudo pacman -S $PKGS
+sudo pacman --noconfirm -S $PKGS

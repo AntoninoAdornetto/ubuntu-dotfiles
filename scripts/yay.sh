@@ -27,7 +27,7 @@ makepkg -si
 echo "Removing go from pacman (goenv will be be utilized instead)..."
 sleep 1
 
-sudo pacman -Rns go
+sudo pacman --noconfirm -Rns go
 
 echo "Download signing key for mullvad-browser"
 gpg --auto-key-locate nodefault,wkd --locate-keys torbrowser@torproject.org
@@ -40,4 +40,4 @@ for p in "${PKGS[@]}"; do
     packages+="$p "
 done
 
-yay -Sy $packages
+yay --noconfirm -Sy $packages
