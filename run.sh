@@ -14,6 +14,9 @@ source "$WD/stow.sh"
 # NOTE: packages outside of the scope of dotfiles will also be installed
 source "$WD/pacman.sh"
 
+# Change the default shell to zsh
+chsh -s $(which zsh)
+
 # Install yay and yay packages
 source "$WD/yay.sh"
 
