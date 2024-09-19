@@ -38,6 +38,7 @@ PKGS=(
     ttf-jetbrains-mono
     ttf-jetbrains-mono-nerd
     vim
+    zsh
 )
 
 packages=""
