@@ -1,7 +1,6 @@
 #!/bin/bash
 
-# BACKUP_DIR="$HOME/.dotfiles-backup/"
-BACKUP_DIR="$HOME/.new-backup-test/" # @TODO: rm and uncomment line above
+BACKUP_DIR="$HOME/.dotfiles-backup/"
 
 # Create backup directory if it doesn't exist
 mkdir -p "$BACKUP_DIR"
