@@ -14,7 +14,7 @@ if ! [[ -d "$TARGET_DIR" ]]; then
 fi
 
 echo "Checking if git and base development packages are installed..."
-sudo pacman -s --needed git base-devel
+sudo pacman -S --needed git base-devel
 
 echo "Cloning yay repository into [$TARGET_DIR]..."
 git clone https://aur.archlinux.org/yay.git "$TARGET_DIR"
