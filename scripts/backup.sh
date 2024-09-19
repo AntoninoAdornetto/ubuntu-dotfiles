@@ -33,18 +33,20 @@ move_existing() {
 # Below are the config files that the init script will intall and set up configs for
 # We will back them up in case you need to retrieve or reference them for any reason
 declare -a config_files=(
-    "$HOME/.bashrc"
     "$HOME/.bash_logout"
     "$HOME/.bash_profile"
-    "$HOME/.zshrc"
-    "$HOME/.config/nvim/"
+    "$HOME/.bashrc"
     "$HOME/.config/alacritty/"
-    "$HOME/.config/wallust/"
     "$HOME/.config/hypr/"
+    "$HOME/.config/i3/"
+    "$HOME/.config/nvim/"
+    "$HOME/.config/ohmyposh/"
+    "$HOME/.config/polybar/"
     "$HOME/.config/rofi/"
     "$HOME/.config/swappy/"
-    "$HOME/.config/ohmyposh/"
+    "$HOME/.config/wallust/"
     "$HOME/.config/waybar/"
+    "$HOME/.zshrc"
 )
 
 # Loop through the array and back up each file/directory
