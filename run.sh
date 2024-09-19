@@ -7,9 +7,15 @@ WD="$HOME/.dotfiles/scripts/"
 # Backup existing dots
 source "$WD/backup.sh"
 
+# Create symlinks with stow
+stow .
+
 # Install pacman packages
 # NOTE: packages outside of the scope of dotfiles will also be installed
 source "$WD/pacman.sh"
+
+# Install yay and yay packages
+source "$WD/yay.sh"
 
 # Install hypr related packages
 source "$WD/hypr.sh"
@@ -27,9 +33,6 @@ fc-cache -fv
 sudo systemctl enable bluetooth.service
 sudo systemctl start bluetooth.service
 
-# Install yay and yay packages
-source "$WD/yay.sh"
-
 # Install node version manager
 source "$WD/nvm.sh"
 
@@ -38,9 +41,3 @@ source "$WD/goenv.sh"
 
 # Set default rust compiler to stable version
 rustup default stable
-
-# Create symlinks with stow
-# NOTE: This is the bread and butter of the script. 
-# After all processes are complete, stow will create symlinks in the home 
-# directory for all the configuration files.
-stow .
