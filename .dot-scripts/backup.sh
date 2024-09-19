@@ -1,0 +1,55 @@
+#!/bin/bash
+
+# BACKUP_DIR="$HOME/.dotfiles-backup/"
+BACKUP_DIR="$HOME/.new-backup-test/" # @TODO: rm and uncomment line above
+
+# Create backup directory if it doesn't exist
+mkdir -p "$BACKUP_DIR"
+if [[ ! -e "$BACKUP_DIR/README.md" ]]; then
+    echo "Creating backup directory [$BACKUP_DIR]"
+    {
+        echo "# WARNING!"
+        echo "CHECK CONTENTS, (HIDDEN FILES TOO) OF THIS DIR CAREFULLY BEFORE DELETING"
+    } > "$BACKUP_DIR/READ_THIS_OR_ELSE.md"
+else
+    echo "Backup directory exists [$BACKUP_DIR]"
+fi
+
+echo "Backing up existing configuration files...."
+
+# Moves a file or directory {src} to [BACKUP_DIR] {dst}
+move_existing() {
+    local src="$1"
+    local dst="$2"
+    local base_name
+
+    if [[ -e "$src" ]]; then
+        mv "$src" "$dst"
+        echo "Moved [$src] to [$dst]"
+    else
+        echo "Source [$src] does not exist."
+    fi
+}
+
+# Below are the config files that the init script will intall and set up configs for
+# We will back them up in case you need to retrieve or reference them for any reason
+declare -a config_files=(
+    "$HOME/.bashrc"
+    "$HOME/.bash_logout"
+    "$HOME/.bash_profile"
+    "$HOME/.zshrc"
+    "$HOME/.config/nvim/"
+    "$HOME/.config/alacritty/"
+    "$HOME/.config/wallust/"
+    "$HOME/.config/hypr/"
+    "$HOME/.config/rofi/"
+    "$HOME/.config/swappy/"
+    "$HOME/.config/ohmyposh/"
+    "$HOME/.config/waybar/"
+)
+
+# Loop through the array and back up each file/directory
+for file in "${config_files[@]}"; do
+    move_existing "$file" "$BACKUP_DIR"
+done
+
