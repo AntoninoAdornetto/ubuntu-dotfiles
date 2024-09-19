@@ -38,3 +38,6 @@ source "$WD/goenv.sh"
 
 # Set default rust compiler to stable version
 rustup default stable
+
+# Create symlinks with stow
+stow .
