@@ -46,4 +46,4 @@ for p in "${PKGS[@]}"; do
 done
 
 echo "Installing pacman packages..."
-sudo pacman -Sy $packages
+sudo pacman --noconfirm -Sy $packages
