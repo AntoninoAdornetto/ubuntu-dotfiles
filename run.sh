@@ -7,12 +7,12 @@ WD="$HOME/.dotfiles/scripts/"
 # Backup existing dots
 source "$WD/backup.sh"
 
-# Create symlinks 
-source "$WD/stow.sh"
-
 # Install pacman packages
 # NOTE: packages outside of the scope of dotfiles will also be installed
 source "$WD/pacman.sh"
+
+# Create symlinks 
+source "$WD/stow.sh"
 
 # Change the default shell to zsh
 chsh -s $(which zsh)
