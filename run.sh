@@ -44,3 +44,9 @@ source "$WD/goenv.sh"
 
 # Set default rust compiler to stable version
 rustup default stable
+
+# Setup docker
+# source "$WD/docker.sh"
+
+# Setup bruno app image
+source "$WD/bruno.sh"
