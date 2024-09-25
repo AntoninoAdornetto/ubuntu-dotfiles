@@ -27,12 +27,13 @@ PKGS=(
     obsidian
     pyenv
     ripgrep
-    rofi
+    rofi-wayland
     rust-analyzer
     rustup
     signal-desktop
     stow
     sushi
+    swaync
     thunar
     tmux
     ttf-jetbrains-mono
