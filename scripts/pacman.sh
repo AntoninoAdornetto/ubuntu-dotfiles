@@ -26,8 +26,7 @@ PKGS=(
     newsboat
     obsidian
     pyenv
-    ripgrep
-    rofi-wayland
+    ripgrep 
     rust-analyzer
     rustup
     signal-desktop
