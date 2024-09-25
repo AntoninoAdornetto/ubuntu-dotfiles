@@ -3,7 +3,10 @@
 OUT_DIR="$(pwd)/scripts/downloads"
 ARCH="docker-desktop-x86_64" # Architecture, not arch linux
 
-if [ ! -d "$OUT_DIR" ]; then
+if [ -e "$OUT_DIR/${ARCH}*" ]; then
+    echo "Removing previous Bruno app image from [$OUT_DIR]"
+    rm "$OUT_DIR/${ARCH}*"
+else
     echo "Creating temporary downloads directory at: [$OUT_DIR]" 
     mkdir -p "$OUT_DIR"
 fi

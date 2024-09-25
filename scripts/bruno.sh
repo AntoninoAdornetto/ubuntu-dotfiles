@@ -9,6 +9,9 @@ OUT="bruno_${VERSION}_${ARCH}_${TYPE}"
 if [ -e "$OUT_DIR/bruno*" ]; then
     echo "Removing previous Bruno app image from [$OUT_DIR]"
     rm "$OUT_DIR/bruno*"
+else
+    echo "Creating temporary downloads directory at: [$OUT_DIR]" 
+    mkdir -p "$OUT_DIR"
 fi
 
 if [ -f /usr/bin/bruno ]; then
