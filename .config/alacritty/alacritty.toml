@@ -9,7 +9,7 @@ args = ["-i"]
 program = "/usr/bin/zsh"
 
 [window]
-opacity = 0.85
+opacity = 0.8
 padding.x = 5
 padding.y = 5
 

@@ -79,6 +79,10 @@ alias ..="cd .."
 
 eval "$(fzf --zsh)"
 
+# NOTE: Monitor mode script is only neccesary for laptop systems
+alias laptop="~/.dotfiles/scripts/monitors.sh laptop"
+alias desktop="~/.dotfiles/scripts/monitors.sh desktop"
+
 ############################
 #  LANG VERSION MANAGERS   #
 ############################

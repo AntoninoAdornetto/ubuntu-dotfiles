@@ -18,7 +18,9 @@ case $1 in
         ;;
     desktop|Desktop)
         echo "You entered desktop mode"
-        MODE="$DESKTOP_MODE"
+        echo "monitor = DP-4, 1920x1080, 0x0, 1" >> "$TARGET"
+        echo "monitor = DP-5, 1920x1080, 1920x0, 1" >> "$TARGET"
+        echo "monitor = eDP-1, disabled" >> "$TARGET"
         ;;
     *)
         echo "Invalid mode..."
