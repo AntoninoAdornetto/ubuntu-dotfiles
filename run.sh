@@ -29,9 +29,6 @@ source "$WD/wayland.sh"
 # Set global git settings
 source "$WD/git.sh"
 
-# Refresh the font cache
-fc-cache -fv
-
 # Enable/Start bluetooth daemon
 sudo systemctl enable bluetooth.service
 sudo systemctl start bluetooth.service
@@ -44,3 +41,9 @@ source "$WD/docker.sh"
 
 # Setup bruno app image
 source "$WD/bruno.sh"
+
+# Install GTK theme (Nord)
+source "$WD/gtktheme.sh"
+
+# Refresh the font cache
+fc-cache -fv
