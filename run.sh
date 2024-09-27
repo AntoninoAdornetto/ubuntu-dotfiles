@@ -36,14 +36,8 @@ fc-cache -fv
 sudo systemctl enable bluetooth.service
 sudo systemctl start bluetooth.service
 
-# Install node version manager
-source "$WD/nvm.sh"
-
-# Install go version manager
-source "$WD/goenv.sh"
-
-# Set default rust compiler to stable version
-rustup default stable
+# Install language managers (nvm, goenv, set default rust compiler)
+source "$WD/lang_version_managers.sh"
 
 # Setup docker
 source "$WD/docker.sh"
