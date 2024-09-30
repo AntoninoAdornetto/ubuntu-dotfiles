@@ -39,6 +39,9 @@ sudo systemctl start bluetooth.service
 # Install node version manager
 source "$WD/nvm.sh"
 
+# Install Java Version Manager
+source "$WD/sdkman.sh"
+
 # Install go version manager
 source "$WD/goenv.sh"
 

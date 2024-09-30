@@ -9,6 +9,8 @@ PKGS=(
     bluez-utils
     btop
     clamav
+    dotnet-runtime
+    dotnet-sdk
     fastfetch
     fd
     fzf
