@@ -82,6 +82,13 @@ alias nb="newsboat"
 
 eval "$(fzf --zsh)"
 
+
+############################
+#          PATHS           #
+############################
+
+export PATH="$HOME/.cargo/bin:$PATH"
+
 ############################
 #  LANG VERSION MANAGERS   #
 ############################
