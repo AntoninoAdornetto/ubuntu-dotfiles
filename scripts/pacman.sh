@@ -12,6 +12,7 @@ PKGS=(
     fastfetch
     fd
     fzf
+    gimp
     git
     htop
     jq
