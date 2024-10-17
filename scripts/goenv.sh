@@ -5,9 +5,6 @@ ZSH_PATH="$HOME/.zshrc"
 GO_VERSION="1.23.1"
 
 if [ -d $TARGET_DIR ]; then
-	unset $GOENV_ROOT
-	unset $GOPATH
-	unset $GOROOT
 	rm -rf $TARGET_DIR
 fi
 
