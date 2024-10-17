@@ -37,6 +37,7 @@ declare -a config_files=(
     "$HOME/.bash_profile"
     "$HOME/.bashrc"
     "$HOME/.config/alacritty/"
+    "$HOME/.config/btop"
     "$HOME/.config/hypr/"
     "$HOME/.config/i3/"
     "$HOME/.config/nvim/"
