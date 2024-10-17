@@ -3,6 +3,7 @@
 TARGET_DIR="$HOME/Development/src-builds/yay"
 
 PKGS=(
+    docker-desktop
     mullvad-browser-bin
     oh-my-posh-bin
     pika-backup

@@ -1,5 +1,12 @@
 #!/bin/bash
 
+#############################################
+# SCRIPT IS NO LONGER USED. KEEPING IT HERE #
+# FOR TIME BEING JUST IN CASE IT'S EVER     #
+# IT'S EVER NEEDED AGAIN.                   #
+# DOCKER DESKTOP IS INSTALLED VIA YAY       #
+#############################################
+
 OUT_DIR="$(pwd)/scripts/downloads"
 ARCH="docker-desktop-x86_64" # Architecture, not arch linux
 

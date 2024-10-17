@@ -36,9 +36,6 @@ sudo systemctl start bluetooth.service
 # Install language managers (nvm, goenv, set default rust compiler)
 source "$WD/lang_version_managers.sh"
 
-# Setup docker
-source "$WD/docker.sh"
-
 # Setup bruno app image
 source "$WD/bruno.sh"
 
