@@ -12,11 +12,6 @@ if [[ ! -e "$BACKUP_DIR/README.md" ]]; then
     } > "$BACKUP_DIR/READ_THIS_OR_ELSE.md"
 else
     echo "Backup directory exists [$BACKUP_DIR]"
-    # NOTE: go versions are managed via goenv (see goenv.sh for more details).
-    # We have to unset them if we are executing `run.sh` again to avoid errors
-    unset $GOENV_ROOT 2>/dev/null
-    unset $GOPATH 2>/dev/null
-    unset $GOROOT 2>/dev/null
 fi
 
 echo "Backing up existing configuration files...."
