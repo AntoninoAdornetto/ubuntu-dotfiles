@@ -47,6 +47,7 @@ declare -a config_files=(
     "$HOME/.config/wallust/"
     "$HOME/.config/waybar/"
     "$HOME/.zshrc"
+    "$HOME/Development/src-builds/"
 )
 
 # Loop through the array and back up each file/directory
