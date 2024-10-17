@@ -42,5 +42,8 @@ source "$WD/bruno.sh"
 # Install GTK theme (Nord)
 source "$WD/gtktheme.sh"
 
+# set any custom icons that may be needed
+source "$WD/icons.sh"
+
 # Refresh the font cache
 fc-cache -fv
