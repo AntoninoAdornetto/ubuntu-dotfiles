@@ -35,3 +35,6 @@ export PATH="$PATH:$GOPATH/bin"
 # Install go
 goenv install $GO_VERSION
 goenv global $GO_VERSION
+
+# Turn dat shit off. Google you cuck
+go telemetry off
