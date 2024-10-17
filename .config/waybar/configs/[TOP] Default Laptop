@@ -42,5 +42,6 @@
 	"pulseaudio",
 	"custom/separator#dot-line",
 	"pulseaudio#microphone",
+	"wlr/taskbar"
 	],
 }

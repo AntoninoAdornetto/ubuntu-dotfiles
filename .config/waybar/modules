@@ -525,7 +525,7 @@
 	],
 },
 "wlr/taskbar": {
-	"format": "{icon} {name} ",
+	"format": "{icon}",
 	"icon-size": 15,
 	"all-outputs": false,
 	"tooltip-format": "{title}",
@@ -534,6 +534,9 @@
 	"ignore-list": [
 		"wofi",
 		"rofi",
+		"thunar",
+		"bruno",
+		"blueman-manager"
 	]
 },
 "custom/cycle_wall": {
