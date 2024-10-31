@@ -18,9 +18,19 @@ case $1 in
         ;;
     desktop|Desktop)
         echo "You entered desktop mode"
-        echo "monitor = DP-4, 1920x1080, 0x0, 1" >> "$TARGET"
-        echo "monitor = DP-5, 1920x1080, 1920x0, 1" >> "$TARGET"
-        echo "monitor = eDP-1, disabled" >> "$TARGET"
+        printf "monitor = DP-4, 1920x1080, 0x0, 1
+monitor = DP-5, 1920x1080, 1920x0, 1
+monitor = eDP-1, disabled\n
+workspace = 1, monitor:DP-4
+workspace = 2, monitor:DP-5
+workspace = 3, monitor:DP-5
+workspace = 4, monitor:DP-5
+workspace = 5, monitor:DP-5
+workspace = 6, monitor:DP-5
+workspace = 7, monitor:DP-5
+workspace = 8, monitor:DP-5
+workspace = 9, monitor:DP-5
+workspace = 10, monitor:DP-5\n" >> "$TARGET"
         ;;
     *)
         echo "Invalid mode..."

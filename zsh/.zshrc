@@ -82,22 +82,22 @@ eval "$(fzf --zsh)"
 # NOTE: Monitor mode script is only neccesary for laptop systems
 alias laptop="~/.dotfiles/scripts/monitors.sh laptop"
 alias desktop="~/.dotfiles/scripts/monitors.sh desktop"
+alias mci="mvn clean install"
 
 ############################
 #  LANG VERSION MANAGERS   #
 ############################
 
-# GOENV
-export GOENV_ROOT="$HOME/.goenv"
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+export GOENV_ROOT="$HOME/Development/src-builds/goenv"
 export PATH="$GOENV_ROOT/bin:$PATH"
 eval "$(goenv init -)"
 export PATH="$GOROOT/bin:$PATH"
 export PATH="$PATH:$GOPATH/bin"
-export GOTELEMETRY=off
 
-# Flutter
-export PATH="$HOME/.flutter/flutter/bin:$PATH"
-
-# THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
